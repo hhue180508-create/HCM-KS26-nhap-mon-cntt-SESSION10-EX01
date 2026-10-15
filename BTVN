@@ -1,0 +1,60 @@
+Phần 1. Phân tích lỗi
+Đoạn mã gốc:
+Markdown
+# Lợi ích của rau sạch
+### Danh sách các loại rau
+[Logo Dự án] (https://greentech.vn/logo.png)
+*Rất quan trọng
+ 
+Lỗi 1: Sai cấu trúc phân cấp Heading
+Markdown
+# Lợi ích của rau sạch
+### Danh sách các loại rau
+Tiêu đề nhảy từ H1 (#) xuống H3 (###).
+Về mặt logic nên đi tuần tự H1 → H2 → H3.
+Điều này làm cấu trúc tài liệu thiếu nhất quán và khó theo dõi.
+✅ Đúng:
+Markdown
+# Lợi ích của rau sạch
+## Danh sách các loại rau
+
+Lỗi 2: Sai cú pháp chèn ảnh
+Markdown
+[Logo Dự án] (https://greentech.vn/logo.png)
+Đây là cú pháp liên kết (Link) lại còn có khoảng trắng giữa ] và (.
+Markdown hiển thị thành văn bản hoặc link, không phải ảnh.
+Để hiển thị ảnh phải thêm dấu !.
+✅ Đúng:
+Markdown
+![Logo Dự án](https://greentech.vn/logo.png)
+
+Lỗi 3: Sai cú pháp in đậm
+Markdown
+*Rất quan trọng
+Một dấu * dùng cho in nghiêng (italic).
+Ngoài ra còn thiếu dấu * đóng ở cuối.
+Yêu cầu bài là in đậm nên phải dùng hai dấu sao ở mỗi bên.
+✅ Đúng:
+Markdown
+**Rất quan trọng**
+
+Lỗi 4: Không tuân thủ quy tắc Heading
+Một bài viết chỉ nên có 1 Heading cấp 1 (H1) làm tiêu đề chính.
+Sau đó mới đến H2, H3... theo thứ tự phân cấp.
+Đây là quy tắc quan trọng giúp tài liệu dễ đọc và dễ tạo mục lục.
+
+Phần 2. Hoàn thiện đoạn mã chuẩn
+Markdown
+# Lợi ích của rau sạch
+ 
+## Danh sách các loại rau
+ 
+![Logo Dự án](https://greentech.vn/logo.png)
+ 
+**Rất quan trọng**
+Kết quả mong muốn
+Có 1 tiêu đề H1: "Lợi ích của rau sạch".
+Có 1 tiêu đề H2: "Danh sách các loại rau".
+Hiển thị 1 ảnh Logo.
+Hiển thị câu "Rất quan trọng" dưới dạng chữ đậm.
+
